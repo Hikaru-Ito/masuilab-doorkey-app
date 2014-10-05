@@ -1,0 +1,42 @@
+html {
+  position: relative;
+  background:#092951;
+}
+#mainContent {
+  height: 100%;
+  width: 100%;
+  background:#092951;
+  text-align: center;
+  z-index: 10;
+  padding-top: 80px;
+  .progress {
+    position: relative;
+    width:280px;
+    margin: 20px auto;
+    content: '';
+    height: 22px;
+    border:1px solid #fff;
+    overflow: hidden;
+    #bar {
+      position: absolute;
+      width:280px;
+      height: 22px;
+      background: #fff;
+      content: '';
+      top:0;
+      left:-280px;
+      -webkit-transform: translate3d(0, 0, 0);
+    }
+  }
+}
+.key_icon {
+  margin:30px 0;
+}
+#status {
+  font-weight: bold;
+  font-size: 18px;
+}
+.comment_zone {
+  font-weight: bold;
+  padding:20px;
+}

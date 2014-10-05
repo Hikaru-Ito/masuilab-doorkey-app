@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <title>MasuiLab Door Key</title>
+
+  <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
+  <link rel="stylesheet" href="styles/onsen-css-components.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="lib/onsen/js/angular/angular.js"></script>
+  <script src="lib/onsen/js/onsenui.js"></script>
+
+  <script src="cordova.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/app.js"></script>
+
+  <script>
+    ons.ready(function() {
+    });
+  </script>
+</head>
+
+<body ng-controller="AppController">
+
+  <ons-navigator var="myNavigator">
+    <ons-page>
+      <ons-toolbar class="top_toobar">
+        <div class="center">MasuiLab Door Key</div>
+        <div class="right">
+          <ons-toolbar-button onclick="myNavigator.pushPage('about.html', { animation : 'slide' } )">
+            <ons-icon icon="ion-navicon" style="font-size: 32px; width: 1em">
+          </ons-toolbar-button>
+        </div>
+      </ons-toolbar>
+      <div id="mainContent" ng-controller="MasterController">
+
+        <ons-icon icon="fa-lock" size="180px" fixed-width="false" style="color: #fff" class="key_icon" ng-hide="keyUnlock" ng-click="startWatch()"></ons-icon>
+        <ons-icon icon="fa-unlock-alt" size="180px" fixed-width="false" style="color: #fff" class="key_icon" ng-show="keyUnlock" ng-click="startWatch()"></ons-icon>
+
+        <div class="progress" ng-show="start">
+          <div id="bar"></div>
+        </div>
+        <div id="status" ng-show="start"></div>
+      </div>
+    </ons-page>
+  </ons-navigator>
+
+  <ons-template id="about.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left"><ons-back-button>Back</ons-back-button></div>
+        <div class="center">About</div>
+      </ons-toolbar>
+
+      <div class="comment_zone">
+        <p>このアプリは、慶応大学SFC増井研究室の扉の鍵（デルタ）を開けるためのアプリです。</p>
+        <p>南京錠のアイコンをタップし、プログレスバーが表示されたら、端末を地面に対して水平に持って鍵を回すように、左に傾けるだけでデルタ館の扉の鍵が開きます。</p>
+        <p style="text-align:right;">@Hikaru_Ito</p>
+      </div>
+    </ons-page>
+  </ons-template>
+</body>
+</html>
