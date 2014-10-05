@@ -17,12 +17,12 @@ Cordova製、AccelerationUI
 
 ## 2. Screenshots and DemoVideo
 
-![ScreenShot](ss1.png)
-![ScreenShot](ss2.png)
-![ScreenShot](ss3.png)
+![ScreenShot](ss1.png)![ScreenShot](ss2.png)![ScreenShot](ss3.png)
 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/AHUTcSOyIbU/0.jpg)](http://www.youtube.com/watch?v=AHUTcSOyIbU)
+
 冒頭のアニメーションは、本来アプリのスプラッシュ画面にしようと思って作ったSVGアニメーションですが、Androidで動作しないのを忘れてたため、アプリには組み込みませんでした。笑
+
 
 ## 3. Installation
 
