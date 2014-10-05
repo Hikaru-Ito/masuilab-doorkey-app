@@ -17,7 +17,7 @@ Cordova製、AccelerationUI
 
 ## 2. Screenshots and DemoVideo
 
-![ScreenShot](ss1.png)![ScreenShot](ss2.png)![ScreenShot](ss3.png)
+![ScreenShot](ss.png)
 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/AHUTcSOyIbU/0.jpg)](http://www.youtube.com/watch?v=AHUTcSOyIbU)
 
