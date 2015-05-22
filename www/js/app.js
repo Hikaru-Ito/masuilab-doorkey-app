@@ -22,10 +22,10 @@
     $scope.unLock = function() {
       // 鍵を解除する
       $.ajax({
-          url: 'http://linda-server.herokuapp.com/delta',
+          url: 'http://linda-server.herokuapp.com/masuilab',
           type: 'POST',
           data: {
-              tuple : '{"type":"door","cmd":"open"}'
+              tuple : '{"type":"door","cmd":"open","where":"delta"}'
           },
           success: function( data ) {
             $scope.$apply(function() {
